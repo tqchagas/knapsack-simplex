@@ -25,7 +25,7 @@ SECRET_KEY = '&qcl+h0)2%x2b&gu03xi#f+5oh*!bg9m#+cz)_#b7ts5@_5w2p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'linear-programming-simplex.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'knapsack-simplex.herokuapp.com']
 
 
 # Application definition

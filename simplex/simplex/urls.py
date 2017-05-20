@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 
-from web.views import Knapsack
+from web.views import Index, Knapsack
 
 urlpatterns = [
+    url(r'^$', Index.as_view(), name='index'),
     url(r'^knapsack/', Knapsack.as_view(), name='knapsack'),
 ]

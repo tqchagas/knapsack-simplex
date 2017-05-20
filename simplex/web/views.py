@@ -9,9 +9,15 @@ from web.forms import KnapsackForm
 from knapsack import knapsack
 
 
+class Index(View):
+    def get(self, request):
+        return render(request, 'index.html')
+
+
 class Knapsack(View):
     def get(self, request):
-        return render(request, 'knapsack.html')
+        contexto = {'menu': 'knapsack'}
+        return render(request, 'knapsack.html', contexto)
 
     def post(self, request):
         form = KnapsackForm(request.POST)

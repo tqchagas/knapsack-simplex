@@ -1,1 +1,1 @@
-web: cd simplex; waitress-serve --port=$PORT oficina.wsgi:application
+web: cd simplex; waitress-serve --port=$PORT simplex.wsgi:application
